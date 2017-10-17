@@ -439,6 +439,9 @@ public class VcfManager {
         infoItems.put(FeatureIndexDao.FeatureIndexFields.IS_EXON.getFieldName(), new InfoItem(FeatureIndexDao
                 .FeatureIndexFields.IS_EXON.getFieldName(), VCFHeaderLineType.Flag, "Defines if a variation is " +
                 "located in exon region"));
+        infoItems.put(FeatureIndexDao.FeatureIndexFields.QUALITY.getFieldName(), new InfoItem(FeatureIndexDao
+                .FeatureIndexFields.QUALITY.getFieldName(), VCFHeaderLineType.Float, "Quality of the given" +
+                " variation"));
         filterInfo.setInfoItemMap(infoItems);
         filterInfo.setAvailableFilters(availableFilters);
 
